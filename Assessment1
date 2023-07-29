@@ -1,0 +1,33 @@
+// SPDX-License-Identifier: MIT
+pragma solidity 0.8.18;
+
+contract Election {
+    //public variables declared
+    uint public age;
+    bool public voterid;
+    
+    // requirement function
+    function requirements(uint _value, bool _kvalue) public {
+        age = _value;
+        voterid = _kvalue;
+        require(age>=18, "You are allowed to vote");
+        require(voterid == true, "You are allowed to vote");
+}
+      // personaldetails function
+    function persondetails(uint _value, bool _kvalue ) public {
+        age = _value;
+        voterid = _kvalue;
+        if(voterid == false || age<18){
+            revert("You cannot participate in the Election");
+
+        
+     }
+}
+      // check function
+    function check(uint _value, bool _kvalue) public {
+        age = _value;
+        voterid = _kvalue;
+        assert(age>=18 && voterid == true);
+    }
+}
+
