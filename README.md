@@ -18,8 +18,8 @@ voterid:Boolean type variable
 We are required to show the use of:
 
 1. require():It checks the preconditions required by a person in order to be eligible to vote.
-    2. assert():It is a postconditional check.It checks the things are their or working as they should be.It checks that the person has voterid card and is above 18 years of age.
-3. revert():If condition is used to perform necesssary revert reqirement.If the person is less than or not equal to 18 years of age or he/she does not have a voterid,they are reverted and not allowed to participate in the elections.
+ 2. assert():It is a postconditional check.It checks the things are their or working as they should be.It checks that the person has voterid card and is above 18 years of age.
+4. revert():If condition is used to perform necesssary revert reqirement.If the person is less than or not equal to 18 years of age or he/she does not have a voterid,they are reverted and not allowed to participate in the elections.
 
 ## Authors
 Kritika Uniyal,Student-Chandigarh University.
